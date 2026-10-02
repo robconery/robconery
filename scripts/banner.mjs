@@ -35,8 +35,6 @@ const PALETTES = {
     waveLip: "#7cc4e8",
     foam: "#ffffff",
     glint: "#ffd27a",
-    node: "#bfe9ff",
-    link: "#9ad7f5",
     text: "#ffffff",
     subtext: "#ffd9a8",
     caption: "#cfe8f7",
@@ -57,8 +55,6 @@ const PALETTES = {
     waveLip: "#bae6fd",
     foam: "#ffffff",
     glint: "#ffffff",
-    node: "#0c4a6e",
-    link: "#0369a1",
     text: "#0f172a",
     subtext: "#7c2d12",
     caption: "#e0f2fe",
@@ -123,15 +119,15 @@ function wavePaths(feet) {
   return { A, body, face, lip, wash, crestX: 480, crestY: WATER - A };
 }
 
-// A surfer, crouched and trimming along the face. Small enough that a few
-// strokes read as a person. Positioned on the face below the crest.
+// A surfer, crouched, riding out of the curl. Sits under the lip where it
+// wraps over, and leans toward the open face on the right.
 function surfer(A, p) {
-  const x = 418;
-  const y = WATER - A * 0.42;
+  const x = 534;
+  const y = WATER - A * 0.3;
   const ink = p.stars ? "#0b1020" : "#0f172a";
   return `<g transform="translate(${x} ${f1(y)})">
     <animateTransform attributeName="transform" type="translate" values="${x} ${f1(y)};${x + 6} ${f1(y + 3)};${x} ${f1(y)}" dur="6s" repeatCount="indefinite"/>
-    <g transform="rotate(-18)">
+    <g transform="rotate(-8)">
       <!-- board -->
       <path d="M-22 6 Q0 1 24 4 Q0 10 -22 6 Z" fill="${ink}"/>
       <!-- legs -->
@@ -144,49 +140,6 @@ function surfer(A, p) {
       <circle cx="5.5" cy="-21" r="3.4" fill="${ink}"/>
     </g>
   </g>`;
-}
-
-// Spray above the crest, drawn as nodes with links between neighbors.
-function sprayNetwork(crestX, crestY, A, p) {
-  const r = rng(20260401);
-  const n = 46;
-  const nodes = [];
-  // Spray blows back off the lip: thickest over the crest, then a plume
-  // that drifts right and falls toward the tube. It never climbs above the
-  // subtitle, so on a big day it goes sideways instead of up.
-  const ceiling = 186;
-  for (let i = 0; i < n; i++) {
-    const t = r(); // 0 at the lip, 1 at the tail of the plume
-    const x = crestX - 30 + t * 330 + r() * 30;
-    const floor = crestY + 4 + t * A * 0.6; // plume sinks as it trails
-    const top = Math.max(ceiling, floor - (56 + A * 0.45) * (1 - t * 0.5));
-    const lift = Math.pow(r(), 0.8) * Math.max(10, floor - top);
-    nodes.push({ x, y: floor - lift, s: 1.2 + r() * 2.2, d: 2.5 + r() * 3.5, b: r() * 4 });
-  }
-  const links = [];
-  for (let i = 0; i < n; i++) {
-    for (let j = i + 1; j < n; j++) {
-      const dx = nodes[i].x - nodes[j].x;
-      const dy = nodes[i].y - nodes[j].y;
-      const dist = Math.hypot(dx, dy);
-      if (dist < 64) links.push([i, j, dist]);
-    }
-  }
-  let out = `<g id="spray" opacity="0.9">`;
-  for (const [i, j, dist] of links) {
-    const a = nodes[i];
-    const b = nodes[j];
-    const op = (0.55 * (1 - dist / 64)).toFixed(2);
-    out += `<line x1="${f1(a.x)}" y1="${f1(a.y)}" x2="${f1(b.x)}" y2="${f1(b.y)}" stroke="${p.link}" stroke-width="0.8" opacity="${op}"/>`;
-  }
-  nodes.forEach((d, i) => {
-    out += `<circle cx="${f1(d.x)}" cy="${f1(d.y)}" r="${f1(d.s)}" fill="${p.node}">` +
-      `<animate attributeName="opacity" values="0.35;1;0.35" dur="${f1(d.d)}s" begin="${f1(d.b)}s" repeatCount="indefinite"/>` +
-      `</circle>`;
-  });
-  out += `</g>`;
-  // The whole cloud rises and falls slowly, like spray hanging in the wind.
-  return `<g><animateTransform attributeName="transform" type="translate" values="0 0;8 -6;0 0" dur="7s" repeatCount="indefinite"/>${out}</g>`;
 }
 
 function stars(p) {
@@ -308,9 +261,8 @@ export function buildBanner({ mode, feet, period, direction, sunset, updated }) 
       <path d="${w.body}" fill="url(#water)"/>
       <path d="${w.face}" fill="url(#face)"/>
       <path d="${w.wash}" fill="${p.foam}" opacity="0.55" filter="url(#soft)"/>
-      <path d="${w.lip}" fill="none" stroke="${p.foam}" stroke-width="5" stroke-linecap="round" opacity="0.95" filter="url(#glow)"/>
       ${surfer(w.A, p)}
-      ${sprayNetwork(w.crestX, w.crestY, w.A, p)}
+      <path d="${w.lip}" fill="none" stroke="${p.foam}" stroke-width="5" stroke-linecap="round" opacity="0.95" filter="url(#glow)"/>
     </g>
 
     <!-- name -->
