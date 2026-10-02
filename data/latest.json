@@ -1,0 +1,22 @@
+{
+  "updated": "2026-10-02T21:49:51.156Z",
+  "buoy": {
+    "station": "51211",
+    "feet": 3.3,
+    "period": 13,
+    "direction": "SSE",
+    "waterF": 82,
+    "observed": "2026-10-02T21:00:00Z"
+  },
+  "sunset": "6:19 pm",
+  "newsletter": {
+    "title": "Why I stopped writing exacting prompts",
+    "link": "https://a.bigmachine.io/ai/why-i-stopped-writing-exacting-prompts",
+    "date": "2026-09-28T22:13:27.000Z"
+  },
+  "video": {
+    "title": "Why Claude Writes Better Code Than I Do",
+    "link": "https://www.youtube.com/watch?v=jo2n33Di0fs",
+    "date": "2026-06-09T20:24:39.000Z"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "robconery-profile",
+  "private": true,
+  "type": "module",
+  "description": "The README for github.com/robconery, with a wave that follows the Oʻahu buoy.",
+  "scripts": {
+    "update": "node scripts/update.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
