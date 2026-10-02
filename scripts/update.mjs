@@ -1,13 +1,11 @@
 // Refreshes the live parts of the profile:
-//   1. the banner, redrawn to the NOAA buoy reading off Oʻahu's south shore
-//   2. the surf and sunset line under it
-//   3. the latest newsletter post and YouTube video
+//   1. the surf and sunset line beneath the artwork
+//   2. the latest newsletter post and YouTube video
 //
 // Run with `node scripts/update.mjs`. No dependencies. Anything that fails
 // to fetch keeps the last good value from data/latest.json.
 
 import { readFile, writeFile } from "node:fs/promises";
-import { buildBanner } from "./banner.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const DATA = new URL("data/latest.json", ROOT);
@@ -174,15 +172,6 @@ async function main() {
   };
 
   const stamp = fmtStamp(now);
-  const bannerArgs = {
-    feet: data.buoy?.feet ?? 0,
-    period: data.buoy?.period ?? "",
-    direction: data.buoy?.direction ?? "",
-    sunset: data.sunset,
-    updated: stamp,
-  };
-  await writeFile(new URL("assets/banner-dark.svg", ROOT), buildBanner({ mode: "dark", ...bannerArgs }));
-  await writeFile(new URL("assets/banner-light.svg", ROOT), buildBanner({ mode: "light", ...bannerArgs }));
 
   let surf;
   if (data.buoy) {
@@ -201,10 +190,6 @@ async function main() {
   if (data.video) latest.push(`- Video: [${data.video.title}](${data.video.link}) <sub>${fmtDate(data.video.date)}</sub>`);
 
   let readme = await readFile(README, "utf8");
-  // GitHub caches README images by URL, so a redrawn banner at the same
-  // path can show stale for hours. A version stamp on the URL fixes that.
-  const stampV = now.getTime();
-  readme = readme.replace(/assets\/banner-(dark|light)\.svg(\?v=\d+)?/g, `assets/banner-$1.svg?v=${stampV}`);
   readme = replaceBlock(readme, "surf", surf);
   readme = replaceBlock(readme, "latest", latest.join("\n") || "- Nothing new yet.");
   await writeFile(README, readme);

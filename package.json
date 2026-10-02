@@ -2,7 +2,7 @@
   "name": "robconery-profile",
   "private": true,
   "type": "module",
-  "description": "The README for github.com/robconery, with a wave that follows the Oʻahu buoy.",
+  "description": "The README for github.com/robconery, with animated surf artwork and live Oʻahu buoy data.",
   "scripts": {
     "update": "node scripts/update.mjs"
   },

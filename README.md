@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=1790978410732">
-  <img alt="A breaking wave off Waikīkī, drawn to today's buoy reading, with Diamond Head on the horizon." src="assets/banner-light.svg?v=1790978410732" width="100%">
-</picture>
+<img alt="Coral Cutouts: an abstract turquoise wave, angular purple mountains, and yellow sunbeams beneath cream clouds." src="assets/banner.svg" width="100%">
 
 <!-- surf:start -->
 Oʻahu right now: **3.6 ft** swell at 12 s out of the SSE on the south shore buoy, water 82°F. Sunset 6:19 pm HST. <sub>Updated Oct 2, 12:00 pm HST</sub>
@@ -9,7 +6,7 @@ Oʻahu right now: **3.6 ft** swell at 12 s out of the SSE on the south shore buo
 
 Hi, I'm Rob. I help software teams adopt AI so they can build better software, and I've spent 20 years teaching developers through books, courses, videos, and conference talks. I live in Honolulu, where I run [Big Machine](https://bigmachine.io) and I'm building [Kōlea](https://kolea.pro).
 
-The wave up top is real. A script reads the NOAA buoy off Oʻahu's south shore a few times a day and redraws the crest to the swell height. Big day, big wave. Flat day, well, you'll see.
+The surf report above updates from NOAA buoy data a few times a day.
 
 ## What I'm Building
 
@@ -49,4 +46,4 @@ Code I'm keeping warm right now:
 
 If you want help getting your team working well with AI, [bigmachine.io](https://bigmachine.io) is the place to start.
 
-<sub>Surf data from NOAA buoy 51211 (Pearl Harbor entrance). The banner, the surf line, and the Latest section are rebuilt by [a small script](scripts/update.mjs) on a schedule.</sub>
+<sub>Surf data from NOAA buoy 51211 (Pearl Harbor entrance). The surf line and the Latest section are updated by [a small script](scripts/update.mjs) on a schedule.</sub>

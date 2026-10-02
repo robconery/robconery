@@ -1,0 +1,42 @@
+<svg class="study-art" id="coral-cutouts" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="s2-title s2-desc">
+      <title id="s2-title">Coral cutouts</title>
+      <desc id="s2-desc">Coral sky, oversized cream cloud, ochre sunlight, purple angular hills and a large turquoise curling wave, composed as flat abstract paper shapes. The wave and clouds drift slowly.</desc>
+      <style>
+        #coral-cutouts .s2-wave { animation: s2-roll 9s ease-in-out infinite; }
+        #coral-cutouts .s2-cloud { animation: s2-cloud 17s ease-in-out infinite; }
+        #coral-cutouts .s2-light { transform-origin: 841px 15px; animation: s2-light 13s ease-in-out infinite; }
+        @keyframes s2-roll { 0%,100% { transform: translate(0,0); } 50% { transform: translate(8px,3px); } }
+        @keyframes s2-cloud { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-10px); } }
+        @keyframes s2-light { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2deg); } }
+        @media (prefers-reduced-motion: reduce) { #coral-cutouts .motion { animation: none !important; } }
+      </style>
+      <defs><clipPath id="s2-clip"><rect width="1200" height="400"/></clipPath></defs>
+      <g clip-path="url(#s2-clip)">
+        <path d="M0 0H1200V400H0Z" fill="#f3937b"/>
+        <g class="motion s2-light" fill="#ffcc43">
+          <path d="m768 26-319 268h150L795 28Z"/>
+          <path d="m820 24-93 270h112L844 24Z"/>
+          <path d="m872 24 92 270h150L897 24Z"/>
+        </g>
+        <circle cx="835" cy="30" r="83" fill="#ffcc43" stroke="#273369" stroke-width="9"/>
+        <path d="m758 295 138-93 46 16 90-66 50 40 55 3 88 57v76Z" fill="#947ba9" stroke="#273369" stroke-width="9" stroke-linejoin="round"/>
+        <path d="m1032 152-28 142 78-102" fill="#b3a0c3" stroke="#273369" stroke-width="9" stroke-linejoin="round"/>
+        <path d="M-25 310h1260v120H-25Z" fill="#273369"/>
+        <g class="motion s2-cloud" fill="#fff0cf" stroke="#273369" stroke-width="9" stroke-linejoin="round">
+          <path d="M685 79h33V49h49V18h75V44h65V66h57v39H685Z"/>
+          <path d="M81 43h27V24h62v19h54v28H81Z"/>
+          <path d="M1115 60h24V37h62v48h-86Z"/>
+        </g>
+        <g class="motion s2-wave" stroke="#273369" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-30 333C120 319 117 154 267 103 407 55 555 124 558 216 560 265 507 287 474 254 523 262 538 203 491 184 434 160 385 229 417 278 470 359 640 349 779 328 925 306 1070 326 1230 312V432H-30Z" fill="#41c5b2"/>
+          <path d="M-30 348C108 348 174 281 209 222 246 158 335 129 411 149 460 162 475 186 470 206 513 192 538 227 508 253 545 240 546 201 517 174 458 112 342 100 260 141 167 187 124 306-30 315Z" fill="#fff0cf" stroke="none"/>
+          <path d="M-25 391c154 8 242-40 295-98 29-33 46-55 72-63" fill="none" stroke-width="14"/>
+          <path d="M120 431c142-32 212-68 237-112 71 82 220 80 371 48" fill="none" stroke-width="14"/>
+          <path d="M784 369c102-15 173-8 264-5m44 1 63-1" fill="none" stroke="#fff0cf" stroke-width="11"/>
+        </g>
+        <g fill="#273369">
+          <path d="m587 179 22-31 7 37Z"/>
+          <path d="m558 119 4-26 24 24Z"/>
+        </g>
+      </g>
+    </svg>

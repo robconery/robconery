@@ -1,4 +1,4 @@
-name: Refresh the wave
+name: Refresh profile data
 
 on:
   schedule:
@@ -36,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing changed."
           else
-            git commit -m "Refresh the wave"
+            git commit -m "Refresh profile data"
             git push
           fi
