@@ -1,10 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="A breaking wave off Waikīkī, drawn to today's buoy reading, with Diamond Head on the horizon." src="assets/banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg?v=1790978410732">
+  <img alt="A breaking wave off Waikīkī, drawn to today's buoy reading, with Diamond Head on the horizon." src="assets/banner-light.svg?v=1790978410732" width="100%">
 </picture>
 
 <!-- surf:start -->
-Oʻahu right now: **3.6 ft** swell at 12 s out of the SSE on the south shore buoy, water 82°F. Sunset 6:19 pm HST. <sub>Updated Oct 2, 11:58 am HST</sub>
+Oʻahu right now: **3.6 ft** swell at 12 s out of the SSE on the south shore buoy, water 82°F. Sunset 6:19 pm HST. <sub>Updated Oct 2, 12:00 pm HST</sub>
 <!-- surf:end -->
 
 Hi, I'm Rob. I help software teams adopt AI so they can build better software, and I've spent 20 years teaching developers through books, courses, videos, and conference talks. I live in Honolulu, where I run [Big Machine](https://bigmachine.io) and I'm building [Kōlea](https://kolea.pro).

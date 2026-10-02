@@ -201,6 +201,10 @@ async function main() {
   if (data.video) latest.push(`- Video: [${data.video.title}](${data.video.link}) <sub>${fmtDate(data.video.date)}</sub>`);
 
   let readme = await readFile(README, "utf8");
+  // GitHub caches README images by URL, so a redrawn banner at the same
+  // path can show stale for hours. A version stamp on the URL fixes that.
+  const stampV = now.getTime();
+  readme = readme.replace(/assets\/banner-(dark|light)\.svg(\?v=\d+)?/g, `assets/banner-$1.svg?v=${stampV}`);
   readme = replaceBlock(readme, "surf", surf);
   readme = replaceBlock(readme, "latest", latest.join("\n") || "- Nothing new yet.");
   await writeFile(README, readme);
