@@ -80,7 +80,9 @@ const f1 = (n) => Number(n).toFixed(1);
 // with it: a 1 ft day is a gentle bump, a 10 ft day fills the banner.
 function wavePaths(feet) {
   const ft = Math.min(Math.max(feet, 0.5), 12);
-  const A = 50 + ft * 11; // crest height in px above the water line
+  // Crest height in px above the water line. Capped so a 12 ft day peaks
+  // just under the subtitle instead of through it.
+  const A = 44 + ft * 7;
   const y = (k) => f1(WATER - A * k);
 
   // Main body: swell on the left, crest peaks around x=480, lip curls over
@@ -149,13 +151,17 @@ function sprayNetwork(crestX, crestY, A, p) {
   const r = rng(20260401);
   const n = 46;
   const nodes = [];
+  // Spray blows back off the lip: thickest over the crest, then a plume
+  // that drifts right and falls toward the tube. It never climbs above the
+  // subtitle, so on a big day it goes sideways instead of up.
+  const ceiling = 186;
   for (let i = 0; i < n; i++) {
-    // Cluster the spray over the crest and let it drift right with the wind.
-    const t = r();
-    const x = crestX - 60 + t * 320 + r() * 40;
-    // Keep the spray out of the name and subtitle on big days.
-    const yy = Math.max(182, crestY - 10 - r() * (70 + A * 0.55) + t * 24);
-    nodes.push({ x, y: yy, s: 1.2 + r() * 2.2, d: 2.5 + r() * 3.5, b: r() * 4 });
+    const t = r(); // 0 at the lip, 1 at the tail of the plume
+    const x = crestX - 30 + t * 330 + r() * 30;
+    const floor = crestY + 4 + t * A * 0.6; // plume sinks as it trails
+    const top = Math.max(ceiling, floor - (56 + A * 0.45) * (1 - t * 0.5));
+    const lift = Math.pow(r(), 0.8) * Math.max(10, floor - top);
+    nodes.push({ x, y: floor - lift, s: 1.2 + r() * 2.2, d: 2.5 + r() * 3.5, b: r() * 4 });
   }
   const links = [];
   for (let i = 0; i < n; i++) {

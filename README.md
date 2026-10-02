@@ -4,7 +4,7 @@
 </picture>
 
 <!-- surf:start -->
-Oʻahu right now: **3.3 ft** swell at 13 s out of the SSE on the south shore buoy, water 82°F. Sunset 6:19 pm HST. <sub>Updated Oct 2, 11:50 am HST</sub>
+Oʻahu right now: **3.6 ft** swell at 12 s out of the SSE on the south shore buoy, water 82°F. Sunset 6:19 pm HST. <sub>Updated Oct 2, 11:55 am HST</sub>
 <!-- surf:end -->
 
 Hi, I'm Rob. I help software teams adopt AI so they can build better software, and I've spent 20 years teaching developers through books, courses, videos, and conference talks. I live in Honolulu, where I run [Big Machine](https://bigmachine.io) and I'm building [Kōlea](https://kolea.pro).
