@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-09T20:24:41.154Z",
+  "updated": "2026-10-10T01:23:51.247Z",
   "buoy": {
     "station": "51211",
     "feet": 3.9,
-    "period": 17,
+    "period": 15,
     "direction": "SSE",
     "waterF": 82,
-    "observed": "2026-10-09T20:00:00Z"
+    "observed": "2026-10-10T01:00:00Z"
   },
-  "sunset": "6:13 pm",
+  "sunset": "6:12 pm",
   "newsletter": {
     "title": "Why I stopped writing exacting prompts",
     "link": "https://a.bigmachine.io/ai/why-i-stopped-writing-exacting-prompts",
