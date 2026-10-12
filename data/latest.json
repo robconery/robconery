@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-12T11:48:05.093Z",
+  "updated": "2026-10-12T22:40:03.631Z",
   "buoy": {
     "station": "51211",
     "feet": 2.6,
-    "period": 17,
+    "period": 15,
     "direction": "SSE",
-    "waterF": 81,
-    "observed": "2026-10-12T11:00:00Z"
+    "waterF": 82,
+    "observed": "2026-10-12T22:00:00Z"
   },
   "sunset": "6:10 pm",
   "newsletter": {
-    "title": "Why I stopped writing exacting prompts",
-    "link": "https://a.bigmachine.io/ai/why-i-stopped-writing-exacting-prompts",
-    "date": "2026-09-28T22:13:27.000Z"
+    "title": "The rise of the programmer-producer",
+    "link": "https://a.bigmachine.io/the-rise-of-the-programmer-producer",
+    "date": "2026-10-12T21:46:14.000Z"
   },
   "video": {
     "title": "Why Claude Writes Better Code Than I Do",
