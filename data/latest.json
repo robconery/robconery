@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-19T20:48:19.594Z",
+  "updated": "2026-10-20T00:48:28.282Z",
   "buoy": {
     "station": "51211",
-    "feet": 3.3,
+    "feet": 3.6,
     "period": 6,
     "direction": "SE",
     "waterF": 81,
-    "observed": "2026-10-19T20:00:00Z"
+    "observed": "2026-10-20T00:00:00Z"
   },
-  "sunset": "6:05 pm",
+  "sunset": "6:04 pm",
   "newsletter": {
     "title": "The rise of the programmer-producer",
     "link": "https://a.bigmachine.io/the-rise-of-the-programmer-producer",
