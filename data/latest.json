@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-22T19:39:04.760Z",
+  "updated": "2026-10-23T00:14:56.554Z",
   "buoy": {
     "station": "51211",
     "feet": 2.6,
-    "period": 6,
-    "direction": "SE",
-    "waterF": 80,
-    "observed": "2026-10-22T18:30:00Z"
+    "period": 15,
+    "direction": "SSE",
+    "waterF": 81,
+    "observed": "2026-10-22T23:00:00Z"
   },
   "sunset": "6:02 pm",
   "newsletter": {
-    "title": "The rise of the programmer-producer",
-    "link": "https://a.bigmachine.io/the-rise-of-the-programmer-producer",
-    "date": "2026-10-12T21:46:14.000Z"
+    "title": "My Grok bot had me panicking for 15 minutes",
+    "link": "https://a.bigmachine.io/my-grok-bot-had-me-panicking-for-15-minutes",
+    "date": "2026-10-22T21:34:37.000Z"
   },
   "video": {
     "title": "Why Claude Writes Better Code Than I Do",
