@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-23T19:39:22.430Z",
+  "updated": "2026-10-24T00:07:48.629Z",
   "buoy": {
     "station": "51211",
-    "feet": 2,
+    "feet": 2.3,
     "period": 14,
-    "direction": "SSE",
-    "waterF": 80,
-    "observed": "2026-10-23T18:30:00Z"
+    "direction": "S",
+    "waterF": 81,
+    "observed": "2026-10-23T23:00:00Z"
   },
-  "sunset": "6:02 pm",
+  "sunset": "6:01 pm",
   "newsletter": {
     "title": "My Grok bot had me panicking for 15 minutes",
     "link": "https://a.bigmachine.io/my-grok-bot-had-me-panicking-for-15-minutes",
