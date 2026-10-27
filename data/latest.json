@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-27T00:59:42.050Z",
+  "updated": "2026-10-27T09:42:44.961Z",
   "buoy": {
     "station": "51211",
     "feet": 3,
-    "period": 13,
+    "period": 14,
     "direction": "SSE",
     "waterF": 81,
-    "observed": "2026-10-27T00:30:00Z"
+    "observed": "2026-10-27T09:00:00Z"
   },
   "sunset": "5:59 pm",
   "newsletter": {
-    "title": "My Grok bot had me panicking for 15 minutes",
-    "link": "https://a.bigmachine.io/my-grok-bot-had-me-panicking-for-15-minutes",
-    "date": "2026-10-22T21:34:37.000Z"
+    "title": "A lurker pass for the Fall cohort",
+    "link": "https://a.bigmachine.io/a-lurker-pass-for-the-fall-cohort",
+    "date": "2026-10-27T06:29:11.000Z"
   },
   "video": {
     "title": "Why Claude Writes Better Code Than I Do",
