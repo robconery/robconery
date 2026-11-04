@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-03T21:22:58.141Z",
+  "updated": "2026-11-04T01:45:15.697Z",
   "buoy": {
     "station": "51211",
-    "feet": 2.6,
-    "period": 13,
-    "direction": "SSE",
+    "feet": 3,
+    "period": 5,
+    "direction": "SE",
     "waterF": 80,
-    "observed": "2026-11-03T21:00:00Z"
+    "observed": "2026-11-04T01:00:00Z"
   },
   "sunset": "5:55 pm",
   "newsletter": {
