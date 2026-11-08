@@ -1,7 +1,7 @@
 <img alt="Coral Cutouts: an abstract turquoise wave, angular purple mountains, and yellow sunbeams beneath cream clouds." src="assets/banner.svg" width="100%">
 
 <!-- surf:start -->
-Oʻahu right now: **3 ft** swell at 14 s out of the SSE on the south shore buoy, water 80°F. Sunset 5:53 pm HST. <sub>Updated Nov 7, 2:57 pm HST</sub>
+Oʻahu right now: **3 ft** swell at 13 s out of the SSE on the south shore buoy, water 80°F. Sunset 5:53 pm HST. <sub>Updated Nov 8, 1:10 am HST</sub>
 <!-- surf:end -->
 
 Hi, I'm Rob. I help software teams adopt AI so they can build better software, and I've spent 20 years teaching developers through books, courses, videos, and conference talks. I live in Honolulu, where I run [Big Machine](https://bigmachine.io) and I'm building [Kōlea](https://kolea.pro).
