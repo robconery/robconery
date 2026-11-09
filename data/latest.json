@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-09T12:41:51.504Z",
+  "updated": "2026-11-09T23:54:29.173Z",
   "buoy": {
     "station": "51211",
-    "feet": 3,
+    "feet": 3.3,
     "period": 8,
     "direction": "SE",
     "waterF": 80,
-    "observed": "2026-11-09T12:00:00Z"
+    "observed": "2026-11-09T23:00:00Z"
   },
   "sunset": "5:52 pm",
   "newsletter": {
-    "title": "A lurker pass for the Fall cohort",
-    "link": "https://a.bigmachine.io/a-lurker-pass-for-the-fall-cohort",
-    "date": "2026-10-27T06:29:11.000Z"
+    "title": "30 minutes, three prototypes of one idea",
+    "link": "https://a.bigmachine.io/30-minutes-three-prototypes-of-one-idea",
+    "date": "2026-11-09T22:03:10.000Z"
   },
   "video": {
     "title": "Why Claude Writes Better Code Than I Do",
