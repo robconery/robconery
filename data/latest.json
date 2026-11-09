@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-08T20:03:16.140Z",
+  "updated": "2026-11-09T01:18:32.829Z",
   "buoy": {
     "station": "51211",
-    "feet": 3.3,
+    "feet": 3,
     "period": 13,
-    "direction": "SSE",
+    "direction": "S",
     "waterF": 80,
-    "observed": "2026-11-08T19:30:00Z"
+    "observed": "2026-11-09T00:30:00Z"
   },
-  "sunset": "5:53 pm",
+  "sunset": "5:52 pm",
   "newsletter": {
     "title": "A lurker pass for the Fall cohort",
     "link": "https://a.bigmachine.io/a-lurker-pass-for-the-fall-cohort",
