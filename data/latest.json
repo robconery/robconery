@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-11T22:23:04.307Z",
+  "updated": "2026-11-12T02:35:47.786Z",
   "buoy": {
     "station": "51211",
-    "feet": 3.6,
+    "feet": 3.3,
     "period": 9,
-    "direction": "SSE",
+    "direction": "SE",
     "waterF": 80,
-    "observed": "2026-11-11T21:30:00Z"
+    "observed": "2026-11-12T02:00:00Z"
   },
-  "sunset": "5:52 pm",
+  "sunset": "5:51 pm",
   "newsletter": {
     "title": "30 minutes, three prototypes of one idea",
     "link": "https://a.bigmachine.io/30-minutes-three-prototypes-of-one-idea",
