@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-18T12:51:33.012Z",
+  "updated": "2026-11-18T22:46:54.175Z",
   "buoy": {
     "station": "51211",
-    "feet": 3.9,
-    "period": 8,
+    "feet": 3.3,
+    "period": 7,
     "direction": "SSE",
     "waterF": 80,
-    "observed": "2026-11-18T12:00:00Z"
+    "observed": "2026-11-18T22:00:00Z"
   },
   "sunset": "5:50 pm",
   "newsletter": {
@@ -15,8 +15,8 @@
     "date": "2026-11-09T22:03:10.000Z"
   },
   "video": {
-    "title": "Why Claude Writes Better Code Than I Do",
-    "link": "https://www.youtube.com/watch?v=jo2n33Di0fs",
-    "date": "2026-06-09T20:24:39.000Z"
+    "title": "Do Bots Dream of Writing Code?",
+    "link": "https://www.youtube.com/watch?v=ppgi-JdQZdY",
+    "date": "2026-11-18T22:46:29.000Z"
   }
 }
