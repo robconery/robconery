@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-19T12:42:36.730Z",
+  "updated": "2026-11-19T22:49:52.146Z",
   "buoy": {
     "station": "51211",
     "feet": 3.6,
     "period": 8,
     "direction": "SSE",
     "waterF": 80,
-    "observed": "2026-11-19T12:00:00Z"
+    "observed": "2026-11-19T22:00:00Z"
   },
   "sunset": "5:50 pm",
   "newsletter": {
-    "title": "30 minutes, three prototypes of one idea",
-    "link": "https://a.bigmachine.io/30-minutes-three-prototypes-of-one-idea",
-    "date": "2026-11-09T22:03:10.000Z"
+    "title": "A year later, and the bots are still just bots",
+    "link": "https://a.bigmachine.io/a-year-later-and-the-bots-are-still-just-bots",
+    "date": "2026-11-19T22:39:23.000Z"
   },
   "video": {
     "title": "Do Bots Dream of Writing Code?",
