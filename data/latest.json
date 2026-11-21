@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-20T22:26:43.042Z",
+  "updated": "2026-11-21T02:54:53.998Z",
   "buoy": {
     "station": "51211",
-    "feet": 3.6,
-    "period": 9,
+    "feet": 3.9,
+    "period": 11,
     "direction": "SSE",
     "waterF": 80,
-    "observed": "2026-11-20T21:30:00Z"
+    "observed": "2026-11-21T02:00:00Z"
   },
-  "sunset": "5:50 pm",
+  "sunset": "5:49 pm",
   "newsletter": {
     "title": "A year later, and the bots are still just bots",
     "link": "https://a.bigmachine.io/a-year-later-and-the-bots-are-still-just-bots",
