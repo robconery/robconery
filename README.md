@@ -1,7 +1,7 @@
 <img alt="Coral Cutouts: an abstract turquoise wave, angular purple mountains, and yellow sunbeams beneath cream clouds." src="assets/banner.svg" width="100%">
 
 <!-- surf:start -->
-Oʻahu right now: **2.6 ft** swell at 10 s out of the SSE on the south shore buoy, water 79°F. Sunset 5:49 pm HST. <sub>Updated Nov 23, 4:16 am HST</sub>
+Oʻahu right now: **2.3 ft** swell at 12 s out of the SSE on the south shore buoy, water 80°F. Sunset 5:49 pm HST. <sub>Updated Nov 23, 4:41 pm HST</sub>
 <!-- surf:end -->
 
 Hi, I'm Rob. I help software teams adopt AI so they can build better software, and I've spent 20 years teaching developers through books, courses, videos, and conference talks. I live in Honolulu, where I run [Big Machine](https://bigmachine.io) and I'm building [Kōlea](https://kolea.pro).
@@ -36,7 +36,7 @@ Code I'm keeping warm right now:
 ## Latest
 
 <!-- latest:start -->
-- Newsletter: [A year later, and the bots are still just bots](https://a.bigmachine.io/a-year-later-and-the-bots-are-still-just-bots) <sub>Nov 19, 2026</sub>
+- Newsletter: [Throw the prototype away or polish it?](https://a.bigmachine.io/throw-the-prototype-away-or-polish-it) <sub>Nov 23, 2026</sub>
 - Video: [Do Bots Dream of Writing Code?](https://www.youtube.com/watch?v=ppgi-JdQZdY) <sub>Nov 18, 2026</sub>
 <!-- latest:end -->
 
